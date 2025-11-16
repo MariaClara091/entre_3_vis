@@ -1,2 +1,3 @@
-web: gunicorn app_proyect:server
+web: gunicorn app_proyect_1:server
+
 
