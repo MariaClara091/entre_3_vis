@@ -1,1 +1,2 @@
-web: gunicorn app_proyect_final:server
+web: gunicorn app_proyect:server
+
