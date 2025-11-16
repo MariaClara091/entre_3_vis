@@ -1,9 +1,0 @@
-dash
-dash-bootstrap-components
-pandas
-numpy
-matplotlib
-seaborn
-scipy
-xgboost
-scikit-learn
