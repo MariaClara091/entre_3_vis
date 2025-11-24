@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8050:8050"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=proyecto_uvb
+      - POSTGRES_USER=usuario_uvb
+      - POSTGRES_PASSWORD=password123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
